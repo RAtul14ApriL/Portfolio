@@ -38,6 +38,10 @@ a {
   font-family: inherit;
 }
 
+p {
+  margin-bottom: 2rem;
+}
+
 header {
   height: 100vh;
   color: var(--color-white);
@@ -276,6 +280,7 @@ section {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 
 .about-container .right-about .about-item {
@@ -330,6 +335,11 @@ section {
   width: 2rem;
   height: 2px;
   background-color: var(--color-grey-5);
+}
+
+.about-container .left-about {
+  line-height: 2rem;
+  padding-right: 4rem;
 }
 
 .btn-container {
