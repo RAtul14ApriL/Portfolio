@@ -38,10 +38,6 @@ a {
   font-family: inherit;
 }
 
-p {
-  margin-bottom: 2rem;
-}
-
 header {
   height: 100vh;
   color: var(--color-white);
@@ -210,8 +206,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+          clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
 }
 
 .header-content .left-header .image {
@@ -338,8 +334,100 @@ section {
 }
 
 .about-container .left-about {
+  padding-right: 5rem;
+}
+
+.about-container .left-about p {
   line-height: 2rem;
-  padding-right: 4rem;
+  padding: 1rem;
+  color: var(--color-grey-1);
+}
+
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+
+.about-stats .progress-bars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-stats .progress-bars .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-stats .progress-bars .progress-bar .progress-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress-text {
+  color: var(--color-grey-2);
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress {
+  width: 100%;
+  height: .45rem;
+  background-color: var(--color-grey-4);
+  margin-left: 1rem;
+  position: relative;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color-secondary);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .javascript {
+  width: 75%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .html5 {
+  width: 85%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .react-js {
+  width: 65%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .node-js {
+  width: 35%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .postgresql {
+  width: 45%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .css3 {
+  width: 95%;
 }
 
 .btn-container {
